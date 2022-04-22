@@ -13,6 +13,39 @@ $(function() {
     });
 });
 
+//時間差攻撃だ！
+$(function() {
+    $(window).scroll(function(){
+        $(".delay").each(function(){
+            let Scroll = $(window).scrollTop();
+            let Block = $(this).offset().top;
+            let Height = $(window).height();
+            if (Scroll > Block - Height + 100) {
+                $('.delay').each(function(i){
+                    let delay = 250;  // 0.1秒ずつずれます。好きな秒数に調整してください。
+                    $(this).delay(i * delay).queue(function(next){
+                        $(this).addClass('show');
+                        next();
+                    });
+                })
+            }
+        });
+    });
+});
+
+//横から出てくるお
+$(function() {
+    $(window).scroll(function(){
+        $(".trigger").each(function(){
+            let Scroll = $(window).scrollTop();
+            let Block = $(this).offset().top;
+            let Height = $(window).height();
+            if (Scroll > Block - Height + 100) {
+                $(".ballet").addClass("shot");
+            }
+        });
+    });
+});
 
 //メニューを出す
 $(function(){

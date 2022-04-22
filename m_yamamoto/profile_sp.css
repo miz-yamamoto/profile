@@ -161,7 +161,7 @@
     .policy h1 {
         width: 200px;
         font-size: 22px;
-        line-height: 22px;
+        line-height: 15px;
     }
     .right {
         margin-left: 10px;
@@ -176,6 +176,7 @@
         width: 18px;
         height: 19px;
         font-size: 16px;
+        letter-spacing: 1px;
     }
 /* title */
 .title {
@@ -195,13 +196,12 @@
     .profile {
         width: 90%;
         height: auto;
-        margin: 0px auto 0;
+        margin: 70px auto 0;
         display: flex;
         flex-direction: column;
     }
     .Profile .title {
-        position: initial;
-        transform: translate(0, 14px);
+        transform: translate(0, 30px);
     }
     /* 画像周り */
     .cute {
@@ -212,8 +212,9 @@
     }
     .cute h3 {
         width: 70%;
-        margin-left: 20%;
+        margin-left: 22%;
         font-size: 10px;
+        letter-spacing: 1px;
         text-transform: uppercase;
     }
     .profile img {
@@ -223,7 +224,7 @@
         object-fit: cover;
         position: relative;
     }
-    .Profile h1 {
+    .Profile h2 {
         transform: translate(0,0);
     }
     .Profile span {
@@ -237,7 +238,7 @@
         margin: 0 auto;
         letter-spacing: 0;
     }
-    .name h2 {
+    .name h3 {
         height: 46px;
         margin: 30px 0 8px 0;
         font-size: 32px;
@@ -255,11 +256,10 @@
     .did {
         width: 84%;
         height: auto;
-        margin: 24px auto 0;
+        margin: 60px auto 0;
     }
     .Did .title {
-        position: initial;
-        transform: translate(0, 0);
+        transform: translate(0, 5px);
     }
     .did img {
         width: 300px;
@@ -283,7 +283,7 @@
         margin: 20px auto 0;
     }
     /* apex */
-    .did2 h2 {
+    .did2 h3 {
         font-family: "Gilda Display", serif;
     }
     .did2 {
@@ -310,26 +310,35 @@
         margin: 20px auto 20px;
     }
     .clarinet {
-        width: 50%;
-        height: 100px;
-        margin: 100px 0 0 50%;
-    }
-    .clarinet_text p {
         width: 100%;
-        font-size: 16px;
-        font-family: "Gilda Display", serif;
+        height: 400px;
+        margin: 200px 0 0;
+        transform: translateY(-320px);
     }
-    .clarinet_text h2 {
+    .clarinet_move .blockIn {
+        transform: translateY(-420px);
+    }
+    .clarinet img {
+        width: 90vw;
+        height: auto;
+        transform: translateX(-3%);
+    }
+    .clarinet_text {
+        width: auto;
+        height: auto;
+        transform: translate(100%, -20px);
+    }
+    .clarinet_text h3 {
         width: 100%;
         font-size: 18px;
         font-family: "Gilda Display", serif;
         letter-spacing: 1px;
         color: #cfcfcf;
     }
-    .clarinet img {
-        width: 100vw;
-        height: auto;
-        transform: translate(-50%,-140px);
+    .clarinet_text p {
+        width: 100%;
+        font-size: 16px;
+        font-family: "Gilda Display", serif;
     }
 
 /* 5.like */
@@ -338,17 +347,16 @@
     }
     .like {
         width: 90%;
-        margin: 23px auto 0;
+        margin: 70px auto 0;
         flex-direction: column;
     }
     .Like .title {
-        position: initial;
-        transform: translate(0, 0);
+        transform: translate(0, 15px);
     }
     .like li {
         margin: 0 auto;
     }
-    .like h2 {
+    .like h3 {
         height: 29px;
         margin: 5px 0 10px 0;
     }
@@ -375,7 +383,7 @@
         height: 50%;
         margin: 25% 8% 25%;
     }
-    .message h1 {
+    .message h2 {
         width: 100%;
         height: 50px;
         margin: 40px auto 0 ;
@@ -392,7 +400,7 @@
         height: 150px;
         margin: 90px auto 40px;
     }
-    .contact h1 {
+    .contact h2 {
         font-size: 18px;
     }
     .contact p {
